@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="presto-cli-0.208-executable">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/src/main/java/presto-cli-0.208-executable.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

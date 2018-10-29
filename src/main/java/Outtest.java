@@ -10,12 +10,12 @@ import java.io.OutputStream;
 public class Outtest {
     public static void main(String[] args) throws IOException, JSchException {
         JSch jsch = new JSch();
-        Session session = jsch.getSession("root", "39.105.47.8" , 22);
+        Session session = jsch.getSession("root", "39.104.141.152" , 22);
         session.setConfig("StrictHostKeyChecking", "no");
         //   java.util.Properties config = new java.util.Properties();
         //   config.put("StrictHostKeyChecking", "no");
-        String command ="cd /root &&./selectIp.sh"+" 172.17.104.30-55";
-        session.setPassword("Ch(791226");
+        String command ="/opt/apps/hive/bin/hive -e \"set hive.cli.print.header=true;select * from emp\"";
+        session.setPassword("Ch20050907");
         session.connect();
 
         ChannelExec channelExec = (ChannelExec) session.openChannel("exec");
